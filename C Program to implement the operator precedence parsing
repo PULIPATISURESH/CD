@@ -139,7 +139,7 @@ if(strcmp(stack,"$E$")==0)
 else
     printf("\nNot Accepted;");
 }
-
+/*
 Output:
 Enter the string
 i*(i+i)*i
@@ -165,3 +165,4 @@ $E      $       Reduced: E->E*E
 $E$             Shift
 $E$             Shift
 Accepted;
+*/
