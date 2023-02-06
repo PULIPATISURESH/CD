@@ -27,9 +27,10 @@ int main() {
 	}
 }
 
-
+/*
 Output:
 The grammar is: S->aS, S->Sb, S->ab
 Enter the string to be checked:
 abb
 String accepted
+*/
