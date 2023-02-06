@@ -12,7 +12,7 @@ int yywrap( )
 {
 	return 1;
 }
-
+/*
 Output:
 
 G:\lex>flex capital.l
@@ -28,3 +28,4 @@ DELHI
  is a capital word
 
 G:\lex>
+*/
