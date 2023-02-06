@@ -72,3 +72,8 @@ int main()
       }
 }
 
+Output:
+enter the string : a = b + c * e + 100
+ identifiers : a b c e
+ constants : 100
+ operators : = + * +
