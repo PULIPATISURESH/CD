@@ -1,0 +1,31 @@
+%{
+    int vow_count=0;
+    int const_count =0;
+%}
+ 
+%%
+[aeiouAEIOU] {vow_count++;}
+[a-zA-Z] {const_count++;}
+%%
+int yywrap(){}
+int main()
+{
+    printf("Enter the string of vowels and consonants:");
+    yylex();
+    printf("Number of vowels are:  %d\n", vow_count);
+    printf("Number of consonants are:  %d\n", const_count);
+    return 0;
+}
+/*
+G:\lex>flex vowels.l
+
+G:\lex>gcc lex.yy.c
+
+G:\lex>a.exe
+Enter the string of vowels and consonants: Vowel sounds allow the air to flow freely, causing the chin to drop noticeably, whilst consonant sounds are produced by restricting the air flow
+       ,      ,
+Number of vowels are:  42
+Number of consonants are:  77
+^C
+G:\lex>
+*/
