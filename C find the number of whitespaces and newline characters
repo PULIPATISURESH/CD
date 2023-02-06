@@ -34,7 +34,7 @@ int main()
 }
 
 
-
+/*
 Output:
 void main()
 {
@@ -45,3 +45,4 @@ c = d * e;
 }
 Total number of words : 18
 Total number of lines : 7
+*/
