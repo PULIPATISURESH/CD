@@ -72,7 +72,7 @@ int main() {
         if (arr[i][2] == 'T')
             printf("%c ", arr[i][1]);}
     }
-
+/*
 Output:
 
         E       +       F
@@ -98,3 +98,4 @@ Output:
         E ->
         F ->
         T ->
+*/
