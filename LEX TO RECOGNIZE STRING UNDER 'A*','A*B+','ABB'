@@ -1,0 +1,29 @@
+%{
+#include<stdio.h>
+#include<string.h>
+%}
+
+A [a]+
+PLUS_B "a+b"
+ABB "abb"
+
+%%
+
+{A} {
+    printf("A: %s\n", yytext);
+}
+
+{PLUS_B} {
+    printf("A+B: %s\n", yytext);
+}
+
+{ABB} {
+    printf("ABB: %s\n", yytext);
+}
+
+%%
+
+int main(void) {
+    yylex();
+    return 0;
+}
