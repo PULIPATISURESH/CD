@@ -32,7 +32,7 @@ int main()
      printf("Total number of characters : %d\n",characters);
     return 0;
 }
-
+/*
 Output:
 void main()
 {
@@ -43,3 +43,4 @@ c = d * e;
 }
 Total number of words : 18
 Total number of lines : 7
+*/
