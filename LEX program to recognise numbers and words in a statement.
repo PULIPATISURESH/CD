@@ -1,0 +1,38 @@
+%%
+[\t ]+ ;
+[0-9]+|[0-9]*\.[0-9]+ { printf("\n%s is NUMBER", yytext);}
+#.* { printf("\n%s is COMMENT", yytext);}
+[a-zA-Z]+ { printf("\n%s is WORD", yytext);}
+\n { ECHO;}
+%%
+int main()
+{
+	while( yylex());
+}
+
+int yywrap( )
+{
+	return 1;
+}
+/*
+Output:
+
+G:\lex>flex numbers_words.l
+
+G:\lex>gcc lex.yy.c
+
+G:\lex>a.exe
+Variables A and B contains 10 and 20 respectively
+
+Variables is WORD
+A is WORD
+and is WORD
+B is WORD
+contains is WORD
+10 is NUMBER
+and is WORD
+20 is NUMBER
+respectively is WORD
+
+G:\lex>
+*/
