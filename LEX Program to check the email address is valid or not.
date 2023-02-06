@@ -1,0 +1,30 @@
+%{
+int flag=0;
+%}
+%%
+[a-z . 0-9]+@[a-z]+".com"|".in" { flag=1; }
+%%
+int main()
+{
+yylex();
+if(flag==1)
+printf("Accepted");
+else
+printf("Not Accepted");
+}
+int yywrap()
+{ return 1;
+ }
+/*
+Output:
+
+G:\lex>flex email_valid.l
+
+G:\lex>gcc lex.yy.c
+
+G:\lex>a.exe
+sse123@gmail.com
+
+Accepted
+G:\lex>
+*/
