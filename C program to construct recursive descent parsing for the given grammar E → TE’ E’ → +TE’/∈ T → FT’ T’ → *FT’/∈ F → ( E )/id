@@ -105,7 +105,7 @@ else
 return(0);
 }
 
-
+/*
 Output:
 Recursive descent parsing for the following grammar
 
@@ -122,6 +122,6 @@ String is accepted
 Enter the string to be checked: a/c+d
 
 String is not accepted
-
+*/
 
 
