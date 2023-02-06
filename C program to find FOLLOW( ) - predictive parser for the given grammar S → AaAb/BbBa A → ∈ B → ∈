@@ -103,7 +103,7 @@ void Array_Manipulation(char ch)
       }
       array[x++] = ch;
 }
-
+/*
 Output:
 Enter Total Number of Productions:      4
 
@@ -129,3 +129,4 @@ Enter production Value to Find Follow:  B
 
 Follow Value of B:      { b a }
 To Continue, Press Y:   n
+*/
