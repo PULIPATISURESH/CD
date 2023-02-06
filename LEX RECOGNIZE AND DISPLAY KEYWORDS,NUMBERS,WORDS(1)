@@ -1,0 +1,29 @@
+%{
+#include<stdio.h>
+#include<string.h>
+%}
+
+DIGIT [0-9]+
+KEYWORD "for"|"while"|"do"|"if"|"else"
+WORD [a-zA-Z]+
+
+%%
+
+{DIGIT} {
+    printf("Number: %s\n", yytext);
+}
+
+{KEYWORD} {
+    printf("Keyword: %s\n", yytext);
+}
+
+{WORD} {
+    printf("Word: %s\n", yytext);
+}
+
+%%
+
+int main(void) {
+    yylex();
+    return 0;
+}
