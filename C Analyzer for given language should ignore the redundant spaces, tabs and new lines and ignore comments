@@ -52,7 +52,7 @@ return 0;
 }
 
 
-
+/*
 Output:
 main is keyword
 int is keyword
@@ -68,3 +68,4 @@ printf is keyword
 % is operator
 d is indentifier
 c is indentifier
+*/
