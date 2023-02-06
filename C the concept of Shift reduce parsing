@@ -57,7 +57,7 @@ printf("\n%s\t\t\t%s\t\t reject",stack,ip_sym); exit(0);
 }
 return;
 }
-
+/*
 Output:
 
                  SHIFT REDUCE PARSER
@@ -80,3 +80,4 @@ Output:
  $E+E              $                    E->b
  $E                	$                    E->E+E
  $E                	$                    ACCEPT
+*/
