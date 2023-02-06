@@ -100,3 +100,27 @@ void addToResultSet(char Result[],char val)
     Result[k]=val;
     Result[k+1]='\0';
 }
+
+
+
+Output:
+How many number of productions ? :4
+Enter productions Number 1 : S=AaAb
+Enter productions Number 2 : S=BbBa
+Enter productions Number 3 : A=$
+Enter productions Number 4 : B=$
+
+ Find the FIRST of  :S
+
+ FIRST(S)= {  $  a  b }
+press 'y' to continue : y
+
+ Find the FIRST of  :A
+
+ FIRST(A)= {  $ }
+press 'y' to continue : y
+
+ Find the FIRST of  :B
+
+ FIRST(B)= {  $ }
+press 'y' to continue : n
