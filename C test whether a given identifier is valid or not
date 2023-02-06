@@ -22,3 +22,8 @@ int main()
 	if(flag==1)
 		printf("\n Valid identifier"); 
 }
+
+
+Output:
+Enter an identifier:abc123
+Valid identifier
