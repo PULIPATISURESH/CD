@@ -100,3 +100,58 @@ void display()
 	for(i=0;i<cnt;i++)
 	printf("%s\t%d\n",sy[i].label,sy[i].addr);
 }
+
+
+
+
+Output:
+
+1.insert
+2.display
+3.search
+4.modify
+5.exit
+1
+enter the label a
+enter the address 100
+
+1.insert
+2.display
+3.search
+4.modify
+5.exit
+2
+a       100
+
+1.insert
+2.display
+3.search
+4.modify
+5.exit
+3
+enter the label a
+label is found
+1.insert
+2.display
+3.search
+4.modify
+5.exit
+4
+enter the labe: a
+label is found
+enter the address 200
+
+1.insert
+2.display
+3.search
+4.modify
+5.exit
+2
+a       200
+
+1.insert
+2.display
+3.search
+4.modify
+5.exit
+5
