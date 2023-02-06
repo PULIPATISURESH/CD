@@ -40,7 +40,7 @@ int main()
 	}
 	return 0;
 }
-
+/*
 Output:
 enter the no: intermediate code:2
 enter the 3 address code:1:a=b+c
@@ -53,3 +53,4 @@ the generated code is:
  mov n,R1
  mul d,R1
  mov R1,d
+*/
