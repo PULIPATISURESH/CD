@@ -102,8 +102,7 @@ void display()
 }
 
 
-
-
+/*
 Output:
 
 1.insert
@@ -155,3 +154,4 @@ a       200
 4.modify
 5.exit
 5
+*/
