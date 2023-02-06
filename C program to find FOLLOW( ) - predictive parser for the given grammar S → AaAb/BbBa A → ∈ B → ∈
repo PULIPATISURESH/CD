@@ -33,6 +33,33 @@ int main()
             printf("}\n");
             printf("To Continue, Press Y:\t");
             scanf(" %c", &option);
+            
+            Output:
+Enter Total Number of Productions:      4
+
+Value of Production Number [1]: S=AaAb
+
+Value of Production Number [2]: S=BbBa
+
+Value of Production Number [3]: A=$
+
+Value of Production Number [4]: B=$
+
+Enter production Value to Find Follow:  S
+
+Follow Value of S:      { $ }
+To Continue, Press Y:   y
+
+Enter production Value to Find Follow:  A
+
+Follow Value of A:      { a b }
+To Continue, Press Y:   y
+
+Enter production Value to Find Follow:  B
+
+Follow Value of B:      { b a }
+To Continue, Press Y:   n
+
       }while(option == 'y' || option == 'Y');
       return 0;
 }
